@@ -1,0 +1,47 @@
+/* Home */
+.home {
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover; /* Css3 */
+    position: relative;
+    background-attachment: fixed;
+}
+.home-content {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.250);
+    padding: 30px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+.home .title {
+    color: #fff;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+.home .home-desc {
+    margin: 20px 0;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
+    line-height: 1.4;
+}
+.home .btn {
+    min-width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.home .btn-start {
+    margin-right: 10px;
+    background-color: #fff;
+}
+.home .btn-learn {
+    background-color: var(--maincolor);
+}

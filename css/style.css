@@ -1,0 +1,150 @@
+/* 
+    1- Common Styles
+    2- General Styles
+    3- Sections Styles
+        3- Header Section
+        3- Home Section
+        3- About Section
+        3- Portfolio Section
+        3- Offer Section
+        3- Service Section
+        3- Number Section
+        3- Pricing Section
+        3- Testimonail Section
+        3- Team Page 
+        3- Blog Page 
+        3- Contact Section
+        3- Footer Section
+*/
+
+
+/* 1- Common Style */
+/* 
+    - container
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 ( left to right )
+    - hover effect 2 ( top to bottom )
+*/
+.container {
+    width: 85%;
+    margin: auto;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0,0, 0.7);
+}
+.hover-opacity {
+    transition: opacity 0.5s;
+}
+.hover-opacity:hover {
+    opacity: 0.4;
+}
+
+.ltr-effect,
+.tp-effect {
+    position: relative;
+}
+.ltr-effect:after,
+.tp-effect:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: -1;
+    transition: width 0.5s;
+    border-radius: 10px;
+}
+.ltr-effect:after {
+    width: 0;
+    transition: width 0.5s;
+}
+.tp-effect:after {
+    width: 100%;
+    height: 0;
+    transition: height 0.5s;
+}
+.ltr-effect:hover:after {
+    width: 100%;
+    border: 1px solid var(--maincolor);
+}
+.tp-effect:hover:after {
+    height: 100%;
+    border: 1px solid var(--maincolor);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: #222;
+}
+.section-header .line {
+    display: block;
+    height: 5px;
+    width: 60px;
+    margin: 0 auto 70px auto;
+    background-color:  var(--maincolor);
+}
+.pd-y {
+    padding: 120px 0;
+}
+
+
+/* 2- General Css Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Css3 */
+}
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+:root {
+    --maincolor : #6195ff;
+}
+.clearfix {
+    clear: both;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: montserrat,sans-serif;
+}
+button {
+    font-family: 'Varela Round', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* 3- Sections Styles */ /* Each Section Is Hedged In Another File */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

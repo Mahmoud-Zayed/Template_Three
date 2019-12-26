@@ -1,0 +1,99 @@
+/* Portfolio */
+.portfolio {
+    background-color: #f9f9f9;
+}
+.portfolio-item {
+    width: 33%;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 15px;
+}
+.portfolio-item .layer-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s;
+}
+.portfolio-item:hover .layer-content {
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content .layer-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0,0, 0.3);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.layer-content .layer-info .category {
+    color: var(--maincolor);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+    transition: top 0.5s, opacity 0.5s;
+    font-size: 20px;
+    transition-delay: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+}
+.layer-content .layer-info .layer-content-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    top: 15px;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.layer-content .layer-info a {
+    color: #fff;
+    position: relative;
+    top: 15px;
+    transition: top 0.5s, opacity 0.5s;
+    transition-delay: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-item:hover .layer-content .layer-info .category,
+.portfolio-item:hover .layer-content .layer-info .layer-content-title,
+.portfolio-item:hover .layer-content .layer-info a {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.layer-content .layer-info a i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: color 0.7s, background-color 0.7s;
+}
+.layer-content .layer-info a i:hover {
+    background-color: #fff;
+    color: var(--maincolor);
+}
+.portfolio-item.mg {
+    margin: 0 0.5%;
+}
+.portfolio-item img {
+    width: 100%;
+    box-shadow: 0px 0px 7px #222;
+}
